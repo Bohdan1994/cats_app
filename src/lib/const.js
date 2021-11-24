@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount';

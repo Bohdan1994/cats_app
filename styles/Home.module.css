@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 0 auto;
+}
+.actions {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.actions input {
+  width: 200px;
+}
+.loader {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translate(-50%,0);
+}

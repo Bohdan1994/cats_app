@@ -63,7 +63,7 @@ export default function Page({initialCats}) {
   )
 }
 
-export const getServerSideProps = async ({ctx}) => {
+export const getServerSideProps = async () => {
   const resCats = await getCats(10);
 
   return {

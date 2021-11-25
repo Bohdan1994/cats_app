@@ -12,16 +12,18 @@ const CatsTable = ({data, totalCount}) => {
 
   return (
       <table>
+        <thead>
         <tr>
           <td>Date</td>
           <td>Text</td>
         </tr>
+        </thead>
         <tbody>
-        {catsWithCells.map(cat => {
+        {catsWithCells.map((cat, index) => {
           if (cat === null) {
-            return <EmptyCell/>
+            return <EmptyCell key={`empty-${index}`}/>
           }
-          return <Cell data={cat}/>
+          return <Cell data={cat} key={cat.text}/>
         })}
         </tbody>
       </table>
